@@ -26,4 +26,7 @@ final_data = agg_data.join(
 
 final_data.show()
 
-final_data.write.mode("overwrite").parquet("output_path/sample")
+final_data.write \
+    .mode("overwrite") \
+    .partitionBy("region") \
+    .parquet("output_partitioned_by_region.parquet")
