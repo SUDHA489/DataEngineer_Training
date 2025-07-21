@@ -1,0 +1,11 @@
+order_id,product_id,quantity,region
+1001,1,2,North
+1002,3,5,West
+1003,2,1,East
+1004,5,3,South
+1005,4,2,North
+1006,9,1,West
+1007,6,4,South
+1008,7,2,East
+1009,8,10,North
+1010,10,6,West

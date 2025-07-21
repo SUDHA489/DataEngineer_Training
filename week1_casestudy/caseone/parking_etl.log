@@ -1,12 +1,14 @@
-2025-07-19 16:15:31,800 - INFO - Starting ETL process
-2025-07-19 16:15:31,800 - INFO - Reading input CSV: parking_events.csv
-2025-07-19 16:15:31,807 - INFO - Starting data validation and cleaning
-2025-07-19 16:15:31,807 - INFO - Converting column 'entry_time' to datetime
-2025-07-19 16:15:31,809 - INFO - Converting column 'exit_time' to datetime
-2025-07-19 16:15:31,811 - INFO - Checking exit_time is not earlier than entry_time
-2025-07-19 16:15:31,812 - INFO - Validating paid_amount column for negative values
-2025-07-19 16:15:31,812 - INFO - Forward filling missing values
-2025-07-19 16:15:31,812 - INFO - Data cleaning and validation completed successfully
-2025-07-19 16:15:31,812 - INFO - Writing cleaned data to Parquet: output.parquet
-2025-07-19 16:15:31,909 - INFO - Reading back from Parquet for verification
-2025-07-19 16:15:32,036 - INFO - ETL process completed successfully
+2025-07-21 21:48:28,858 - INFO - Starting ETL process
+2025-07-21 21:48:28,858 - INFO - Reading input CSV: parking_events.py
+2025-07-21 21:48:52,658 - INFO - Starting ETL process
+2025-07-21 21:48:52,658 - INFO - Reading input CSV: parking_events.csv
+2025-07-21 21:48:52,664 - INFO - Starting data validation and cleaning
+2025-07-21 21:48:52,664 - INFO - Converting column 'entry_time' to datetime
+2025-07-21 21:48:52,669 - INFO - Converting column 'exit_time' to datetime
+2025-07-21 21:48:52,671 - INFO - Checking exit_time is not earlier than entry_time
+2025-07-21 21:48:52,671 - INFO - Validating paid_amount column for negative values
+2025-07-21 21:48:52,671 - INFO - Forward filling missing values
+2025-07-21 21:48:52,673 - INFO - Data cleaning and validation completed successfully
+2025-07-21 21:48:52,673 - INFO - Writing cleaned data to Parquet: output.parquet
+2025-07-21 21:48:56,526 - INFO - Reading back from Parquet for verification
+2025-07-21 21:49:04,060 - INFO - ETL process completed successfully

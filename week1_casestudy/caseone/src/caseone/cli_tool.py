@@ -66,7 +66,7 @@ def ETL(input,output):
     df=clean_and_validate(df)
 
     logging.info(f"Writing cleaned data to Parquet: {output}")
-    df.to_parquet(output, engine='pyarrow', index=False)
+    df.to_parquet(output, engine='pyarrow', index=False, coerce_timestamps='us')
 
 
     logging.info("Reading back from Parquet for verification")
