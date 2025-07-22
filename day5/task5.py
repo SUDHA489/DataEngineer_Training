@@ -8,9 +8,10 @@ spark=SparkSession.builder\
 .getOrCreate()
 
 
-df = spark.read.option("header", "true").csv("clicks.csv")
+df = spark.read.csv("clicks.csv",header=True)
 
 rdd = spark.sparkContext.textFile("clicks.csv")
+
 header = rdd.first()
 rdd = rdd.filter(lambda row: row != header).map(lambda row: row.split(","))
 
