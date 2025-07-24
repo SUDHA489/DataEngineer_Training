@@ -2,14 +2,14 @@ Step 1: Peer Review
 	I presented my initial star schema data model to my friend.
 	Reviewer: Madhu MM
 	Feedback:
-		The overall structure was good, but there was a small issue — the reviewer pointed out that I missed 		the relationship between FACT_RETURNS and DIM_REGION. They suggested adding this link to keep the 		model complete.
+		The overall structure was good, but there was a small issue — the reviewer pointed out that I missed 		         the relationship between FACT_RETURNS and DIM_REGION. They suggested adding this link to keep the model                         complete.
 
 Step 2: Model Refinement
 	I carefully checked all the relationships between the fact tables and dimension tables.
 	I noticed I had indeed missed connecting FACT_RETURNS to DIM_REGION.
-	I fixed this by adding the missing relationship so that every fact table is properly linked to the related 	dimensions.
+	I fixed this by adding the missing relationship so that every fact table is properly linked to the related 	               dimensions.
 
 Step 3: Validation and Confidence Building
 	I shared the refined model with my peer for a final check.
-	The reviewer confirmed that the updated model looks good now and follows the star schema principles 	correctly.
+	The reviewer confirmed that the updated model looks good now and follows the star schema principles correctly.
 	This gave me more confidence that my design is clear and complete.
