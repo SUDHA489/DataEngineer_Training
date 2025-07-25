@@ -1,0 +1,6 @@
+product_id,product_name,category,price
+SKU123,Laptop,Electronics,1200.00
+SKU456,Smartphone,Electronics,800.00
+SKU789,Tablet,Electronics,500.00
+SKU321,Headphones,Accessories,150.00
+SKU654,Monitor,Electronics,300.00
