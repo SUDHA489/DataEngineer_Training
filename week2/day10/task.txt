@@ -1,0 +1,46 @@
+table:-
+
+	airport (airport_id, name, address, city, state, country, customer_care_number)
+
+	flight(flight_id, flight_number, time_depart, time_arrive, departure_airport_id, arrival_airport_id)
+
+	passenger(passenger_id, full_name, email, phone_number)
+	
+	ticket(ticket_id, passenger_id, flight_id, purchase_date, seat_class, amount)
+
+	boarding_pass(boarding_id, ticket_id, passenger_id, flight_id, seat_number)
+
+
+Hubs:-
+
+	
+	hub_airport (airport_hashkey,airport_id,LoadDate,RecordSource)
+
+	hub_flight (flight_hashkey,flight_id,LoadDate,RecordSource)
+
+	hub_passenger (passenger_hashkey,passenger_id,LoadDate,RecordSource)
+
+	hub_ticket (ticket_hashkey,ticket_id,LoadDate,RecordSource)
+
+	hub_boarding_pass (boarding_pass_hashkey,boarding_id,LoadDate,RecordSource)
+
+Links:-
+
+	link_flight_airport (link_flight_airport_hashkey,flight_hashkey,departure_airport_hashkey,arrival_airport_hashkey,LoadDate,RecordSource)
+
+	link_ticket_passenger (link_ticket_passenger_hashkey,ticket_hashkey,passenger_hashkey,LoadDate,RecordSource)
+
+	link_ticket_flight (link_ticket_flight_hashkey,ticket_hashkey,flight_hashkey,LoadDate,RecordSource)
+
+	link_boarding_pass_ticket (link_boarding_pass_ticket_hashkey,boarding_pass_hashkey,ticket_hashkey,LoadDate,RecordSource)
+
+	link_boarding_pass_flight (link_boarding_pass_flight_hashkey,boarding_pass_hashkey,flight_hashkey,LoadDate,RecordSource)
+
+
+satellites:-
+
+	sat_airport_details (airport_hashkey, name, address, city, state, country, customer_care_number, LoadDate, RecordSource)
+	sat_flight_details (flight_hashkey, flight_number, time_depart, time_arrive, LoadDate, RecordSource)
+	sat_passenger_details (passenger_hashkey, full_name, email, phone_number, LoadDate, RecordSource)
+	sat_ticket_details (ticket_hashkey, purchase_date, seat_class, amount, LoadDate, RecordSource)
+	sat_boarding_pass_details (boarding_pass_hashkey, seat_number, LoadDate, RecordSource)
