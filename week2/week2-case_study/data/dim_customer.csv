@@ -1,0 +1,10 @@
+customer_id,first_name,last_name,email,contact_number,country,city
+1,Alice,Smith,alice@example.com,+1234567890,USA,New York
+2,Bob,Johnson,bob@example.com,+1987654321,UK,London
+3,Charlie,Brown,charlie@example.com,+1122334455,Canada,Toronto
+4,David,Williams,david@example.com,+1222333444,USA,Los Angeles
+5,Eva,Taylor,eva@example.com,+1555666777,Germany,Berlin
+6,Frank,Miller,frank@example.com,+1999888777,Australia,Sydney
+7,Grace,Lee,grace@example.com,+1444555666,France,Paris
+8,Henry,Adams,henry@example.com,+1777888999,Japan,Tokyo
+9,Ivy,Davis,ivy@example.com,+1999222333,India,Mumbai

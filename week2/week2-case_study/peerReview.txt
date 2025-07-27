@@ -1,0 +1,30 @@
+Step 1: Peer Review
+	I presented my initial star schema data model to my friend.
+	Reviewer: Madhu MM
+	Feedback:
+
+		The overall design was clear and simple.
+
+		The dimension tables DIM_CUSTOMER and DIM_PRODUCT are well defined and properly cover customer and product attributes.
+
+		The fact table FACT_SALES correctly includes the transaction-level details such as sales_id, customer_id, product_id, quantity, unit_price, and order_date.
+
+		The reviewer pointed out that while the keys are clear, I should ensure that customer_id and product_id are set as foreign keys referencing the dimension tables.
+
+		Madhu also suggested that in the future, I could include a DIM_DATE to manage dates in a more flexible way for advanced reporting.
+
+Step 2: Model Refinement
+	I verified the keys and relationships:
+
+	I confirmed that sales_id acts as the primary key for FACT_SALES.
+
+	I made sure customer_id in FACT_SALES links to DIM_CUSTOMER and product_id links to DIM_PRODUCT.
+
+	I noted the suggestion for a DIM_DATE dimension, but for this version I kept order_date as a direct column.
+
+Step 3: Validation and Confidence Building
+	I shared the refined schema again with Madhu for final feedback.
+
+	The reviewer confirmed that the star schema is now clear, relational links are correct, and the model is ready for use in analysis and reporting.
+	
+	This gave me more confidence that my design is solid, simple, and follows good star schema principles.

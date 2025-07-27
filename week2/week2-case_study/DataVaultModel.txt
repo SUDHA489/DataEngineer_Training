@@ -1,0 +1,29 @@
+
+
+tables:-
+
+    dim_customer(customer_id,first_name,last_name,email,contact_number,country,city)
+
+    dim_product(product_id,product_name,category,sub_category,price,date_released)
+
+    fact_sales(sales_id,customer_id,product_id,quantity,unit_price,order_date)
+
+
+Hubs:-
+
+    hub_customer(customer_hashkey,customer_id,LoadDate,RecordSource)
+    hub_product(product_hashkey,product_id,LoadDate,RecordSource)
+    hub_sales(sales_hashkey,sales_hashkey,sales_id,LoadDate,RecordSource)
+
+
+links:-
+
+    link_sales_customer(link_sales_customer_hashkey,sales_hashkey,customer_hashkey,LoadDate,RecordSource)
+    link_sales_product(link_sales_product_hashkey,sales_hashkey,product_hashkey,LoadDate,RecordSource)
+
+
+satellites:-
+
+    sat_customer_details(customer_hashkey,first_name,last_name,email,contact_number,country,city,LoadDate,RecordSource)
+    sat_product_details(product_hashkey,product_name,category,sub_category,price,date_released,LoadDate,RecordSource)
+    sat_sales_details(sales_hashkey,quantity,unit_price,order_date,LoadDate,RecordSource)
