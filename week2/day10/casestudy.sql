@@ -56,7 +56,6 @@ create table link_sales_product (
 -- creating satellites
 
 create table sat_customer_details(
-  sat_customer_details_id int auto_increment primary key,
   customer_hashkey varchar(50),
   name varchar(50),
   address varchar(50),
@@ -67,7 +66,6 @@ create table sat_customer_details(
 );
 
 create table sat_product_details (
-  sat_product_details_id int auto_increment primary key,
   product_hashkey varchar(50),
   product_name varchar(50),
   category varchar(50),
@@ -78,7 +76,6 @@ create table sat_product_details (
 );
 
 create table sat_sales_details (
-  sat_sales_details_id int auto_increment primary key,
   sales_hashkey varchar(50),
   purchase_date datetime,
   quantity int,
