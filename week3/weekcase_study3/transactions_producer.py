@@ -8,7 +8,7 @@ producer = KafkaProducer(
     security_protocol='SASL_SSL',
     sasl_mechanism='PLAIN',
     sasl_plain_username='$ConnectionString',
-    sasl_plain_password='Endpoint=sb://balusudha-kafka-namespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=ESenVx8WkrhMzJeYVzPYwSUFyj0XAPV+L+AEhKow1vk=',
+    sasl_plain_password='',
     value_serializer=lambda v: json.dumps(v).encode('utf-8'),
     key_serializer=lambda k: str(k).encode('utf-8') if k else None
 )
