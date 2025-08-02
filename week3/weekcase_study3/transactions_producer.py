@@ -4,7 +4,7 @@ from datetime import datetime,timedelta
 import uuid
 
 producer = KafkaProducer(
-    bootstrap_servers='balusudha-kafka-namespace.servicebus.windows.net:9093',
+    bootstrap_servers='',
     security_protocol='SASL_SSL',
     sasl_mechanism='PLAIN',
     sasl_plain_username='$ConnectionString',
